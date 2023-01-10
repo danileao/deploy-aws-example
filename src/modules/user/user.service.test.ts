@@ -1,4 +1,4 @@
-import { describe, assert, test, expect } from 'vitest'
+import { describe, expect, test } from 'vitest'
 import { UserInMemoryRepository } from './repositories/user.in-memory.repository'
 import { UserService } from './user.service'
 
