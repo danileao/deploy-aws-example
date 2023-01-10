@@ -5,7 +5,7 @@ pipeline {
    stage('Build project image') {
     steps {
       script {
-        dockerapp = docker.build("danieleleaoe/deploy-aws", "-f ./Dockerfile ./")
+        dockerapp = docker.build("danieleleaoe/deploy-aws:${env.BUILD_ID}", "-f ./Dockerfile ./")
       }
     }
    }
