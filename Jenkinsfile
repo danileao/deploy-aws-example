@@ -12,13 +12,13 @@ pipeline {
 
    stage('Remove container if exists') {
     steps {
-      sh """
+      sh '''
             if [ $( docker ps -a -f name=deploy-aws | wc -l ) -eq 2 ]; then
               docker stop deploy-aws
               docker rm deploy-aws
             
             fi
-      """
+      '''
     }
    }
 
