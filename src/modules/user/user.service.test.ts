@@ -9,7 +9,7 @@ describe('Create User', () => {
     const userService = new UserService(userRepository)
 
     const result = await userService.create({
-      email: 'teste_user@email.com.br',
+      email: 'teste@email.com.br',
       name: 'name_test',
       username: 'username_test',
     })
