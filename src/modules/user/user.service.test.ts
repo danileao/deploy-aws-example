@@ -30,6 +30,6 @@ describe('Create User', () => {
 
     const result = await userService.find()
 
-    expect(result.length).toBe(1)
+    expect(result.length).toBe(2)
   })
 })

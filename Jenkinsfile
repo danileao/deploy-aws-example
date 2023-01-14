@@ -2,6 +2,14 @@ pipeline {
   agent any
 
   stages {
+
+  stage('Run Test') {
+    steps {
+      script {
+        sh 'npm install && npm run test'
+      }
+    }
+  }
    stage('Build project image') {
     steps {
       script {
