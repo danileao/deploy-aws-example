@@ -8,7 +8,7 @@
     "test": "vitest",
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "start": "npx prisma generate && node dist/src/server.js"
+    "start": "npx prisma generate && npx prisma migrate deploy  && node dist/src/server.js"
   },
   "keywords": [],
   "author": "",
