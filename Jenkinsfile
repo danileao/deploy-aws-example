@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools {
+    nodejs '18.13.0'
+  }
+
   stages {
 
   stage('Run Test') {
